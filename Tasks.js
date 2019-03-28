@@ -20,7 +20,12 @@ reverseString('abc');
 
 -3- A function which prints the stair picture of size n
 
-
+let printStairs = (n) => {
+    for (let pyramid = 1; pyramid <= n; pyramid++) {
+        console.log('#'.repeat(pyramid));
+    }
+}
+printStairs(3);
 
 ...................................................................................
 
