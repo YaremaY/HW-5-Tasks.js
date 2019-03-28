@@ -1,32 +1,15 @@
 .................................................................................................................................
 
--1-
+-1- Build a function that does currency converter from USD to UAH (1 USD = 8 UAH).
   
-<!DOCTYPE html>
-<html>
-<title>CurrencyConverter</title>
-<body>
-
-<h2>CurrencyConverter</h2>
-<p>Function that does currency converter from USD to UAH:</p>
-
-<p>
-  <label>USD</label>
-  <input id="inputUSD" type="number" placeholder="USD" oninput="CurrencyConverter(this.value)" onchange="CurrencyConverter(this.value)">
-</p>
-<p>UAH: <span id="outputUAH"></span></p>
-
-<script>
-function CurrencyConverter(valNum) {
-  document.getElementById("outputUAH").innerHTML=valNum * 8;
-}
-</script>
-</body>
-</html>
+let convert = (usd) => {
+  console.log (usd*8)
+} ;
+convert(2);
 
 .................................................................................................................................
 
- -2-
+ -2- A function which returns reversed string.
   
 function reverseString(str) {
     return str.split("").reverse().join("");
@@ -35,7 +18,7 @@ reverseString('abc');
 
 .................................................................................
 
--3-
+-3- A function which prints the stair picture of size n
 
 
 
@@ -46,15 +29,12 @@ reverseString('abc');
   
 .................................................................................
 
--5- 
+-5- Write a function which returns the smallest of three numbers.
   
-let a = 10, b = 5, c = 11
-
-Math.min(a, b, c); 
-
-a = 3, b = 8, c = 4
-
-Math.min (a, b, c)
+let min=(a,b,c)=>{
+    console.log(Math.min(a,b,c));}
+min(10,5,11)
+min(3,8,4)
 
 
 .....................................................................................
