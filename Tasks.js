@@ -58,3 +58,16 @@ min(3,8,4)
 
 .....................................................................................
 
+-6- A function which prints the pyramid picture of size n
+
+function printPyramid(n) { 
+    for (let i = 1; i <= n; i++) {
+      let s = "";
+      for (let p = 1; p <= (2 * n - 1); p++) { 
+         (p >= n + 1 - i && p <= n - 1 + i) ? s += "#" : s += " "; 
+       }
+      console.log(s);
+     }
+ }
+ printPyramid(5);
+
