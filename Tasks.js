@@ -31,8 +31,20 @@ printStairs(3);
 
 -4- A function which returns total sum of a range
 
+function sumRange(arr) {
+  let max = Math.max.apply(null, arr);
+  let min = Math.min.apply(null, arr);
+  let arr2 = [];
 
-  
+  for (let i=min; i<=max; i++)
+  {
+    arr2.push(i);
+  }
+  return arr2.reduce(function(sum, item){sum+=item; return sum;},0);
+}
+
+sumRange([-1, 3]);
+sumRange([2, 4]);
   
 .................................................................................
 
