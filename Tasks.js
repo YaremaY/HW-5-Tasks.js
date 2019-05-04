@@ -71,3 +71,14 @@ function printPyramid(n) {
  }
  printPyramid(5);
 
+-8- A function which returns true if string contains ironman or cursor or ostap otherwise returns false. The function must be case-insensitive.
+
+function cursorCheck (str) {
+if (str = 'ironman' || 'cursor' || 'ostap') {
+    return true;
+} else {
+    return false;
+}
+}
+cursorCheck('Hello I am OstaP') 
+cursorCheck('Superman is here')
